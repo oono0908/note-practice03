@@ -1,0 +1,53 @@
+extends ./layout/_layout.pug
+
+block append meta
+  meta(content='コーディングに特化したフリーランス。ユアコーディングへのお問い合わせはこちらから。' name='description')
+  meta(name='“robots”' content='“noindex”')
+block title 
+  title コアコーディング
+block append style
+  link(rel='preconnect' href='https://fonts.googleapis.com')
+  link(rel='preconnect' href='https://fonts.gstatic.com' crossorigin)
+  link(href='https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@700&display=swap' rel='stylesheet')
+  link(rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css')
+  link(rel="stylesheet" href="../css/style.css") 
+block append script 
+  script(src="../js/top.min.js")
+  header.header 
+    h1.header__left
+      a(href="").header__logo-link
+        .header-link__wrapper
+          .header__logo
+            img(src="../img/logo.png").header__img
+          .header__left-title ユアコーディング
+    .header__menu 
+      .header__menu-line
+      .header__menu-line
+      .header__menu-line
+  .mv 
+    .mv__title コーディングの手間を最小に、デザインに注力する助けに
+    .mv__title-sub ユアコーディングはコーディングに特化したフリーランスデザインに注力されたい方の助けになります
+    .inquire-btn.inquire-btn_mv-margin 
+      a(href="").inquire-btn__link お問い合わせ
+
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
