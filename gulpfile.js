@@ -24,6 +24,7 @@ const paths = {
   gulp.task("pug", done => {
     gulp
       .src(paths.src.pug)
+      .pipe(plumber())
       .pipe(
         plumber({ errorHandler: notify.onError("Error: <%= error.message %>") })
       )
@@ -34,6 +35,7 @@ const paths = {
 
 gulp.task("scripts", function(done) {
     gulp.src('./src/js/*.js')
+        .pipe(plumber())
         .pipe(uglify())
         .pipe(rename({
             extname: '.min.js'
@@ -43,6 +45,7 @@ gulp.task("scripts", function(done) {
 });
 gulp.task('sass', function(done){
      gulp.src('./src/sass/*.scss')
+     .pipe(plumber())
         .pipe(sass({outputStyle: 'expanded'}))
         .pipe(postcss([autoprefixer()]))
         .pipe(gulp.dest('./dest//css/'));

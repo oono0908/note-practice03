@@ -9,35 +9,104 @@ block append style
   link(rel='preconnect' href='https://fonts.googleapis.com')
   link(rel='preconnect' href='https://fonts.gstatic.com' crossorigin)
   link(href='https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@700&display=swap' rel='stylesheet')
+  link(href='https://unpkg.com/aos@2.3.1/dist/aos.css' rel='stylesheet')
   link(rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css')
+  link(rel="stylesheet" href="../css/slick.css") 
   link(rel="stylesheet" href="../css/style.css") 
 block append script 
+  script(src="../js/jquery.min.js")
+  script(src='https://unpkg.com/aos@2.3.1/dist/aos.js')
+  script(src="../js/slick.min.js")
   script(src="../js/top.min.js")
+
+  .header__sp-menu 
+      ul.header__sp-menu-list 
+        li.header__sp-menu-item INTRODUCTION
+        li.header__sp-menu-item PRICE
+        li.header__sp-menu-item INQUIRE
+        li.header__sp-menu-item BLOG
+        li.header__sp-menu-item WORKS
+        li.header__sp-menu-item CONTACT
   header.header 
-    h1.header__left
-      a(href="").header__logo-link
-        .header-link__wrapper
-          .header__logo
-            img(src="../img/logo.png").header__img
-          .header__left-title ユアコーディング
-    .header__menu 
-      .header__menu-line
-      .header__menu-line
-      .header__menu-line
-  .mv 
-    .mv__title コーディングの手間を最小に、デザインに注力する助けに
-    .mv__title-sub ユアコーディングはコーディングに特化したフリーランスデザインに注力されたい方の助けになります
-    .inquire-btn.inquire-btn_mv-margin 
-      a(href="").inquire-btn__link お問い合わせ
+    .header__inner
+      h1.header__left
+        a(href="").header__logo-link
+          .header-link__wrapper
+            .header__logo
+              img(src="../img/logo.png").header__img
+            .header__left-title ユアコーディング
+      ul.header__menu-pc-tab.pc-only
+        li.header__menu-item.move_js FEATURE
+        li.header__menu-item.move_js PRICE
+        li.header__menu-item.move_js CONTACT
+      .inquire-btn.pc-only.move_js CONTACT
+      .header__menu.sp-only
+        .header__menu-line
+        .header__menu-line
+        .header__menu-line
+  .mv
+    .l-section__wrapper-pc
+      .mv__bg-img01-wrapper
+        img(src="../img/mv01.png").mv__bg-img01
+      .mv__bg-img02-wrapper 
+        img(src="../img/mv02.png").mv__bg-img02
+      .mv__title コーディングの手間を
+        br.pc-only
+        | 最小に、デザインに注力
+        br
+        | する助けに
+      .mv__title-sub ユアコーディングはコーディングに
+        br
+        | 特化したフリーランス
+        br
+        | デザインに注力されたい方の
+        br
+        | 助けになります
+      .inquire-btn.inquire-btn_mv-margin.move_js CONTACT
+  .contents 
+    section.intro.INTRODUCTION.FEATURE
+      include ./includes/_intro.pug
+    section.price.PRICE
+      include ./includes/_price.pug
+    section.inquire.INQUIRE
+      include ./includes/_inquire.pug
+    section.blog.BLOG
+      include ./includes/_blog.pug
+    section.works.WORKS
+      include ./includes/_works.pug
+    section.contact.CONTACT
+      include ./includes/_contact.pug
+  footer.footer 
+    p.footer__title ユアコーディング
+    ul.corporate__policy-list
+      li.coporate__policy-item
+        a(href="") プライバシーポリシー
+      li.coporate__polisy-item.coporate__polisy-item-text-align
+        a(href="") 個人商取引法に基づく表記
+    .copy ©ユアコーディング, All Rights Reserved.
 
 
 
-      
 
 
 
 
-    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

@@ -10,27 +10,256 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@700&amp;display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+    <link rel="stylesheet" href="../css/slick.css">
     <link rel="stylesheet" href="../css/style.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="../js/jquery.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="../js/slick.min.js"></script>
     <script src="../js/top.min.js"></script>
+    <div class="header__sp-menu"> 
+      <ul class="header__sp-menu-list"> 
+        <li class="header__sp-menu-item">INTRODUCTION</li>
+        <li class="header__sp-menu-item">PRICE</li>
+        <li class="header__sp-menu-item">INQUIRE</li>
+        <li class="header__sp-menu-item">BLOG</li>
+        <li class="header__sp-menu-item">WORKS</li>
+        <li class="header__sp-menu-item">CONTACT</li>
+      </ul>
+    </div>
     <header class="header"> 
-      <h1 class="header__left"><a class="header__logo-link" href="">
-          <div class="header-link__wrapper">
-            <div class="header__logo"><img class="header__img" src="../img/logo.png"></div>
-            <div class="header__left-title">ユアコーディング</div>
-          </div></a></h1>
-      <div class="header__menu"> 
-        <div class="header__menu-line"></div>
-        <div class="header__menu-line"></div>
-        <div class="header__menu-line"></div>
+      <div class="header__inner">
+        <h1 class="header__left"><a class="header__logo-link" href="">
+            <div class="header-link__wrapper">
+              <div class="header__logo"><img class="header__img" src="../img/logo.png"></div>
+              <div class="header__left-title">ユアコーディング</div>
+            </div></a></h1>
+        <ul class="header__menu-pc-tab pc-only">
+          <li class="header__menu-item move_js">FEATURE</li>
+          <li class="header__menu-item move_js">PRICE</li>
+          <li class="header__menu-item move_js">CONTACT</li>
+        </ul>
+        <div class="inquire-btn pc-only move_js">CONTACT</div>
+        <div class="header__menu sp-only">
+          <div class="header__menu-line"></div>
+          <div class="header__menu-line"></div>
+          <div class="header__menu-line"></div>
+        </div>
       </div>
     </header>
-    <div class="mv"> 
-      <div class="mv__title">コーディングの手間を最小に、デザインに注力する助けに</div>
-      <div class="mv__title-sub">ユアコーディングはコーディングに特化したフリーランスデザインに注力されたい方の助けになります</div>
-      <div class="inquire-btn inquire-btn_mv-margin"> <a class="inquire-btn__link" href="">お問い合わせ</a></div>
+    <div class="mv">
+      <div class="l-section__wrapper-pc">
+        <div class="mv__bg-img01-wrapper"><img class="mv__bg-img01" src="../img/mv01.png"></div>
+        <div class="mv__bg-img02-wrapper"> <img class="mv__bg-img02" src="../img/mv02.png"></div>
+        <div class="mv__title">コーディングの手間を<br class="pc-only">最小に、デザインに注力<br>する助けに</div>
+        <div class="mv__title-sub">ユアコーディングはコーディングに<br>特化したフリーランス<br>デザインに注力されたい方の<br>助けになります</div>
+        <div class="inquire-btn inquire-btn_mv-margin move_js">CONTACT</div>
+      </div>
     </div>
+    <div class="contents"> 
+      <section class="intro INTRODUCTION FEATURE">
+        <div class="l-section l-section__wrapper-pc" data-aos="fade-up">
+          <h2 class="l-section__title">ユアコーディング3つの特徴
+            <p class="l-section__title-sub">FEATURES</p>
+          </h2>
+          <article class="intro-card">
+            <h3 class="intro-card__title">高速コーディング</h3>
+            <div class="intro-card__body-devide">
+              <div class="intro-card__img-wrapper"><img class="intro-card__img" src="../img/intro01.png" alt="高速コーディングの画像"></div>
+              <div class="intro-card__body-right">
+                <p class="intro-card__exp">コーディングに特化したフリーランスのため、<br>スピード感を持った開発が可能。</p>
+                <p class="intro-card__exp-sub">開発は常にスピードとの勝負です。ユアコーディングはコーディングに特化しているため、素早く納品することで、クライアントがデザインに注力する助けとなります。</p>
+              </div>
+            </div>
+          </article>
+        </div>
+        <div class="l-section l-section__wrapper-pc" data-aos="fade-up">
+          <article class="intro-card">
+            <h3 class="intro-card__title">高速コーディング</h3>
+            <div class="intro-card__body-devide">
+              <div class="intro-card__img-wrapper"><img class="intro-card__img" src="../img/intro01.png" alt="高速コーディングの画像"></div>
+              <div class="intro-card__body-right">
+                <p class="intro-card__exp">コーディングに特化したフリーランスのため、<br>スピード感を持った開発が可能。</p>
+                <p class="intro-card__exp-sub">開発は常にスピードとの勝負です。ユアコーディングはコーディングに特化しているため、素早く納品することで、クライアントがデザインに注力する助けとなります。</p>
+              </div>
+            </div>
+          </article>
+        </div>
+        <div class="l-section l-section__wrapper-pc" data-aos="fade-up">
+          <article class="intro-card">
+            <h3 class="intro-card__title">高速コーディング</h3>
+            <div class="intro-card__body-devide">
+              <div class="intro-card__img-wrapper"><img class="intro-card__img" src="../img/intro01.png" alt="高速コーディングの画像"></div>
+              <div class="intro-card__body-right">
+                <p class="intro-card__exp">コーディングに特化したフリーランスのため、<br>スピード感を持った開発が可能。</p>
+                <p class="intro-card__exp-sub">開発は常にスピードとの勝負です。ユアコーディングはコーディングに特化しているため、素早く納品することで、クライアントがデザインに注力する助けとなります。</p>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+      <section class="price PRICE">
+        <div class="l-section l-section__wrapper-pc" data-aos="fade-up">
+          <h2 class="l-section__title">価格
+            <p class="l-section__title-sub">PRICE </p>
+          </h2>
+          <table class="price-table" border="1"> 
+            <tr class="price-body-devide">
+              <th class="price-table__title price-table_border-top">HTMLコーディングトップページ</th>
+              <td class="price-table__data price-table__data_border-top">30.000円〜</td>
+            </tr>
+            <tr class="price-body-devide">
+              <th class="price-table__title">HTMLコーディング下層1ページ</th>
+              <td class="price-table__data">10.000円〜</td>
+            </tr>
+            <tr class="price-body-devide">
+              <th class="price-table__title">HTML+WordPressトップページ</th>
+              <td class="price-table__data">55.000円〜</td>
+            </tr>
+            <tr class="price-body-devide">
+              <th class="price-table__title">HTML+WordPress下層1ページ</th>
+              <td class="price-table__data">15.000円〜</td>
+            </tr>
+          </table>
+          <p class="price-cation">＊詳細な価格はページや仕様によって異なります</p>
+        </div>
+      </section>
+      <section class="inquire INQUIRE">
+        <div class="l-section l-section__wrapper-pc" data-aos="fade-up">
+          <h2 class="l-section__title">よくある質問
+            <p class="l-section__title-sub">FAQ </p>
+          </h2>
+          <dl class="inquire__list"> 
+            <dt class="inquire__title">デザインから一貫してお願いすることは可能でしょうか</dt>
+            <dd class="inquire__body">ユアコーディングはコーディングに特化したサービスですので、デザインからお受けすることは基本的にありません。ただデザインを行う際は提携しているデザイナーと連携して対応させていただきますので、別途ご連絡ください。</dd>
+            <dt class="inquire__title">WordPressのカスタマイズをお願いすることも可能でしょうか？</dt>
+            <dd class="inquire__body">可能です。ただECサイトなどの場合は構築難易度や工数の関係で綿密にヒアリングさせていただきたく思います。</dd>
+            <dt class="inquire__title">コーディングのスピード感が知りたい</dt>
+            <dd class="inquire__body">HTMLレスポンシブ込み5ページで1週間、10ページで2週間、WordPressサイト5ページで2週間、10ページで3週間が目安になります。</dd>
+          </dl>
+        </div>
+      </section>
+      <section class="blog BLOG">
+        <div class="l-section l-section__wrapper-pc" data-aos="fade-up">
+          <h2 class="l-section__title">ブログ
+            <p class="l-section__title-sub">BLOG</p>
+          </h2>
+          <ul class="cards">
+            <li class="cards__item"> 
+              <div class="cards__img-wrapper"> <img class="cards__img" src="../img/blog01.png"></div>
+              <p class="cards__txt">WebサイトでSEO内部施策に適したコーディングでどれぐらいサイトが早くなるのか検証してみました</p>
+              <time class="cards__time">2020.01.23</time>
+            </li>
+            <li class="cards__item"> 
+              <div class="cards__img-wrapper"> <img class="cards__img" src="../img/blog01.png"></div>
+              <p class="cards__txt">WebサイトでSEO内部施策に適したコーディングでどれぐらいサイトが早くなるのか検証してみました</p>
+              <time class="cards__time">2020.01.23</time>
+            </li>
+            <li class="cards__item"> 
+              <div class="cards__img-wrapper"> <img class="cards__img" src="../img/blog01.png"></div>
+              <p class="cards__txt">WebサイトでSEO内部施策に適したコーディングでどれぐらいサイトが早くなるのか検証してみました</p>
+              <time class="cards__time">2020.01.23</time>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="works WORKS">
+        <div class="l-section" data-aos="fade-up">
+          <h2 class="l-section__title">制作実績
+            <p class="l-section__title-sub">WORKS </p>
+          </h2>
+          <ul class="works__list"> 
+            <li class="works__item"><a href="">
+                <div class="works__img-wrapper"> <img class="works__img" src="../img/works01.png"></div>
+                <p class="works__txt">株式会社サンプル様採用サイトのコーディングを行いました！</p>
+                <ul class="works__detail-list">
+                  <li class="works__detail-item">採用技術：jQuery,Bootstrap4</li>
+                  <li class="works__detail-item">実装期間：2週間</li>
+                  <li class="works__detail-item">担当コーダー：石井</li>
+                </ul></a></li>
+            <li class="works__item"><a href="">
+                <div class="works__img-wrapper"> <img class="works__img" src="../img/works01.png"></div>
+                <p class="works__txt">株式会社サンプル様採用サイトのコーディングを行いました！</p>
+                <ul class="works__detail-list">
+                  <li class="works__detail-item">採用技術：jQuery,Bootstrap4</li>
+                  <li class="works__detail-item">実装期間：2週間</li>
+                  <li class="works__detail-item">担当コーダー：石井</li>
+                </ul></a></li>
+            <li class="works__item"><a href="">
+                <div class="works__img-wrapper"> <img class="works__img" src="../img/works01.png"></div>
+                <p class="works__txt">株式会社サンプル様採用サイトのコーディングを行いました！</p>
+                <ul class="works__detail-list">
+                  <li class="works__detail-item">採用技術：jQuery,Bootstrap4</li>
+                  <li class="works__detail-item">実装期間：2週間</li>
+                  <li class="works__detail-item">担当コーダー：石井</li>
+                </ul></a></li>
+            <li class="works__item"><a href="">
+                <div class="works__img-wrapper"> <img class="works__img" src="../img/works01.png"></div>
+                <p class="works__txt">株式会社サンプル様採用サイトのコーディングを行いました！</p>
+                <ul class="works__detail-list">
+                  <li class="works__detail-item">採用技術：jQuery,Bootstrap4</li>
+                  <li class="works__detail-item">実装期間：2週間</li>
+                  <li class="works__detail-item">担当コーダー：石井</li>
+                </ul></a></li>
+            <li class="works__item"><a href="">
+                <div class="works__img-wrapper"> <img class="works__img" src="../img/works01.png"></div>
+                <p class="works__txt">株式会社サンプル様採用サイトのコーディングを行いました！</p>
+                <ul class="works__detail-list">
+                  <li class="works__detail-item">採用技術：jQuery,Bootstrap4</li>
+                  <li class="works__detail-item">実装期間：2週間</li>
+                  <li class="works__detail-item">担当コーダー：石井</li>
+                </ul></a></li>
+            <li class="works__item"><a href="">
+                <div class="works__img-wrapper"> <img class="works__img" src="../img/works01.png"></div>
+                <p class="works__txt">株式会社サンプル様採用サイトのコーディングを行いました！</p>
+                <ul class="works__detail-list">
+                  <li class="works__detail-item">採用技術：jQuery,Bootstrap4</li>
+                  <li class="works__detail-item">実装期間：2週間</li>
+                  <li class="works__detail-item">担当コーダー：石井</li>
+                </ul></a></li>
+          </ul>
+        </div>
+      </section>
+      <section class="contact CONTACT">
+        <div class="l-section l-section__wrapper-pc" data-aos="fade-up">
+          <h2 class="l-section__title">お問い合わせ
+            <p class="l-section__title-sub">CONTACT</p>
+            <p class="l-section__title-sub">コーディングの人出が足りないとき、<br>あなたの力になります</p>
+          </h2>
+          <form class="contact__form">
+            <div class="contact__title-wrapper">
+              <div class="contact__title">お名前</div>
+              <div class="contact__caution">必須</div>
+            </div>
+            <input class="contact__input contact__input-name" type="text" name="name" placeholder="山田太郎">
+            <div class="contact__title-wrapper">
+              <div class="contact__title">メールアドレス</div>
+              <div class="contact__caution">必須</div>
+            </div>
+            <input class="contact__input contact__input_mail" type="email" name="mail" placeholder="メールアドレス">
+            <div class="contact__title-wrapper">
+              <div class="contact__title">お問い合わせ内容</div>
+              <div class="contact__caution">必須</div>
+            </div>
+            <textarea class="contact__input contact__input_detail" type="text" name="detail" placeholder="お問い合わせ内容"></textarea>
+            <div class="agree-wrapper">
+              <input class="input__agree" type="checkbox" value="" name="agree">
+              <p class="input__agree-txt">プライバシーに同意する</p>
+            </div>
+            <button class="contact__submit" type="submit" disabled>送信</button>
+          </form>
+        </div>
+      </section>
+    </div>
+    <footer class="footer"> 
+      <p class="footer__title">ユアコーディング</p>
+      <ul class="corporate__policy-list">
+        <li class="coporate__policy-item"><a href="">プライバシーポリシー</a></li>
+        <li class="coporate__polisy-item coporate__polisy-item-text-align"><a href="">個人商取引法に基づく表記</a></li>
+      </ul>
+      <div class="copy">©ユアコーディング, All Rights Reserved.</div>
+    </footer>
   </head>
   <body></body>
 </html>
